@@ -1,10 +1,29 @@
 import styled from 'styled-components';
+import theme from '../../styles/theme';
 import bgLight from '../../assets/images/bg-pattern-light.svg';
 
 export const Container = styled.div`
   max-width: 600px;
   margin: 0 auto;
   height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  p {
+    align-self: center;
+    margin-top: 18px;
+    color: ${theme.text};
+
+    strong {
+      margin-left: 10px;
+      font-weight: 700;
+
+      a {
+        color: ${theme.text};
+      }
+    }
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -16,12 +35,17 @@ export const Wrapper = styled.div`
 `;
 
 export const SignInHeader = styled.div`
-  background: #7380f5;
+  background: ${theme.primary};
   height: 94px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   color: #fff;
+  padding: 0 10px;
+
+  img {
+    margin-top: -15px;
+  }
 `;
 
 export const BgImage = styled.div`
@@ -40,25 +64,29 @@ export const SignInContent = styled.div`
   h2 {
     align-self: center;
     margin-bottom: 8px;
+    color: ${theme.text};
   }
   p {
     align-self: center;
     margin-bottom: 35px;
+    color: ${theme.text};
   }
   input {
     margin-bottom: 15px;
-    height: 35px;
+    height: 37px;
     padding-left: 12px;
     border-radius: 3px;
     outline: 0;
     border: solid 1px rgba(0, 0, 0, 0.1);
+    color: ${theme.text};
   }
   button {
     margin-bottom: 4px;
-    background: #7380f5;
+    background: ${theme.primary};
     height: 35px;
     width: 70px;
     color: #fff;
     align-self: center;
+    font-weight: 700;
   }
 `;

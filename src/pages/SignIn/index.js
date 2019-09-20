@@ -1,12 +1,12 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import logo from '../../assets/images/tecmar.png';
 import {
   Container,
   SignInHeader,
   Wrapper,
   BgImage,
-  SignInContent,
-  Form
+  SignInContent
 } from './styles';
 
 export default function SignIn() {
@@ -15,6 +15,7 @@ export default function SignIn() {
       <Container>
         <Wrapper>
           <SignInHeader>
+            <img src={logo} height="48" alt="logo" />
             <h1>House Control Program</h1>
           </SignInHeader>
           <SignInContent>
@@ -25,6 +26,12 @@ export default function SignIn() {
             <button>Login</button>
           </SignInContent>
         </Wrapper>
+        <p>
+          Não tem uma conta?
+          <strong>
+            <Link to="/register">Me registrar</Link>
+          </strong>
+        </p>
       </Container>
     </BgImage>
   );
