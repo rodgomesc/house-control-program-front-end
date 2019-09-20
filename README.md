@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c6727951-fb50-4507-ae2f-fe25b9ff6641/deploy-status)](https://app.netlify.com/sites/housecontrolprogram/deploys)
+
+Preview WebSite current status in [https://housecontrolprogram.netlify.com](https://housecontrolprogram.netlify.com)
 
 ## Available Scripts
 
