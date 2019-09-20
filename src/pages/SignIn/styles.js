@@ -35,8 +35,8 @@ export const Wrapper = styled.div`
 `;
 
 export const SignInHeader = styled.div`
-  background: ${theme.primary};
-  height: 94px;
+  background: ${theme.primaryGradient};
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +44,7 @@ export const SignInHeader = styled.div`
   padding: 0 10px;
 
   img {
-    margin-top: -15px;
+    margin-top: -4px;
   }
 `;
 

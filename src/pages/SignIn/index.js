@@ -19,7 +19,7 @@ export default function SignIn() {
       <Container>
         <Wrapper>
           <SignInHeader>
-            <img src={logo} height="48" alt="logo" />
+            <img src={logo} height="35" alt="logo" />
             <h1>House Control Program</h1>
           </SignInHeader>
           <SignInContent>
