@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     -webkit-font-smoothing: antialiased;
+    background: #f5f6fa;
   }
   body, input, button {
     font: 14px 'Nunito', sans-serif;
