@@ -5,6 +5,7 @@ import bgLight from '../../assets/images/bg-pattern-light.svg';
 export const Container = styled.div`
   max-width: 600px;
   margin: 0 auto;
+  padding-bottom: 30px;
   height: 100%;
 
   display: flex;
@@ -12,7 +13,7 @@ export const Container = styled.div`
 
   p {
     align-self: center;
-    margin-top: 18px;
+    margin-bottom: 10px;
     color: ${theme.text};
 
     strong {
@@ -35,16 +36,21 @@ export const Wrapper = styled.div`
 `;
 
 export const SignUpHeader = styled.div`
-  background: ${theme.primary};
-  height: 94px;
+  background: ${theme.primaryGradient};
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #fff;
   padding: 0 10px;
+  h1 {
+    padding-right: 20px;
+  }
 
   img {
-    margin-top: -15px;
+    padding-left: 10px;
+    margin-top: -4px;
+    height: 35px;
   }
 `;
 
@@ -66,9 +72,9 @@ export const SignUpContent = styled.div`
     margin-bottom: 8px;
     color: ${theme.text};
   }
-  p {
+  #login {
     align-self: center;
-    margin-bottom: 35px;
+    margin-top: 30px;
     color: ${theme.text};
   }
   input {
@@ -81,10 +87,10 @@ export const SignUpContent = styled.div`
     color: ${theme.text};
   }
   button {
-    margin-bottom: 4px;
+    margin-top: 10px;
     background: ${theme.primary};
     height: 35px;
-    width: 100px;
+    width: 100%;
     color: #fff;
     align-self: center;
     font-weight: 700;

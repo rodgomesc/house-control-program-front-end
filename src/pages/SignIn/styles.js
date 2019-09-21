@@ -13,8 +13,7 @@ export const Container = styled.div`
 
   p {
     align-self: center;
-    margin-top: 18px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     color: ${theme.text};
     strong {
       margin-left: 10px;
@@ -50,6 +49,7 @@ export const SignInHeader = styled.div`
   img {
     padding-left: 10px;
     margin-top: -4px;
+    height: 35px;
   }
 `;
 
@@ -62,6 +62,7 @@ export const BgImage = styled.div`
 
 export const SignInContent = styled.div`
   background: #fff;
+  padding-top: 30px;
   display: flex;
   margin: 28px 37px;
   flex-direction: column;
@@ -74,10 +75,10 @@ export const SignInContent = styled.div`
 
   h2 {
     align-self: center;
-    margin-bottom: 8px;
+    margin-bottom:30px;
     color: ${theme.text};
   }
-  
+
   input {
     margin-bottom: 15px;
     height: 37px;

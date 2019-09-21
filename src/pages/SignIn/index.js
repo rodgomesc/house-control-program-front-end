@@ -19,8 +19,8 @@ export default function SignIn() {
       <Container>
         <Wrapper>
           <SignInHeader>
-            <img src={logo} height="35" alt="logo" />
-            <h1>House Control Program</h1>
+            <img src={logo} alt="logo" />
+            <h1>Sistema Ação Social</h1>
           </SignInHeader>
           <SignInContent>
             <h2>Bem Vindo</h2>
@@ -36,7 +36,7 @@ export default function SignIn() {
             </p>
           </SignInContent>
         </Wrapper>
-        
+
       </Container>
     </BgImage>
   );
