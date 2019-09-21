@@ -23,20 +23,22 @@ export default function SignIn() {
             <h1>House Control Program</h1>
           </SignInHeader>
           <SignInContent>
-            <h2>login</h2>
+            <h2>Bem Vindo</h2>
             <p>Entre com email e senha para acessar o painel administrativo</p>
             <input placeholder="Entre com seu usuário" type="text" />
             <input placeholder="Entre com sua senha" type="text" />
             <button onClick={handleLogin}>Login</button>
+            <p id="register">
+              Não tem uma conta?
+              <strong>
+                <Link to="/register">Me registrar</Link>
+              </strong>
+            </p>
           </SignInContent>
         </Wrapper>
-        <p>
-          Não tem uma conta?
-          <strong>
-            <Link to="/register">Me registrar</Link>
-          </strong>
-        </p>
+        
       </Container>
     </BgImage>
   );
+
 }

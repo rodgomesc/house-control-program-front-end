@@ -5,6 +5,7 @@ import bgLight from '../../assets/images/bg-pattern-light.svg';
 export const Container = styled.div`
   max-width: 600px;
   margin: 0 auto;
+  padding-bottom: 30px;
   height: 100%;
 
   display: flex;
@@ -13,8 +14,8 @@ export const Container = styled.div`
   p {
     align-self: center;
     margin-top: 18px;
+    padding-bottom: 10px;
     color: ${theme.text};
-
     strong {
       margin-left: 10px;
       font-weight: 700;
@@ -42,8 +43,12 @@ export const SignInHeader = styled.div`
   align-items: center;
   color: #fff;
   padding: 0 10px;
+  h1 {
+    padding-right: 20px;
+  }
 
   img {
+    padding-left: 10px;
     margin-top: -4px;
   }
 `;
@@ -61,16 +66,18 @@ export const SignInContent = styled.div`
   margin: 28px 37px;
   flex-direction: column;
 
+  #register {
+    align-self: center;
+    margin-top: 65px;
+    color: ${theme.text};
+  }
+
   h2 {
     align-self: center;
     margin-bottom: 8px;
     color: ${theme.text};
   }
-  p {
-    align-self: center;
-    margin-bottom: 35px;
-    color: ${theme.text};
-  }
+  
   input {
     margin-bottom: 15px;
     height: 37px;
@@ -80,11 +87,12 @@ export const SignInContent = styled.div`
     border: solid 1px rgba(0, 0, 0, 0.1);
     color: ${theme.text};
   }
+
   button {
-    margin-bottom: 4px;
+    margin-top: 10px;
     background: ${theme.primary};
     height: 35px;
-    width: 70px;
+    width: 100%;
     color: #fff;
     align-self: center;
     font-weight: 700;
