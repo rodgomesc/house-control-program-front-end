@@ -1,5 +1,5 @@
 export default {
-  primaryGradient: 'linear-gradient(to right, #7380f5, #7000f5)',
+  primaryGradient: 'linear-gradient(to right, #7380f5, #7666f5)',
   primary: '#7380f5',
   secondary: '#fff',
   lightest: '#fcfdff',
