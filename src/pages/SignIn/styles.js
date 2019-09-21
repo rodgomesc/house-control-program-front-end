@@ -80,6 +80,7 @@ export const SignInContent = styled.div`
     border: solid 1px rgba(0, 0, 0, 0.1);
     color: ${theme.text};
   }
+  
   button {
     margin-bottom: 4px;
     background: ${theme.primary};
