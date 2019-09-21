@@ -5,6 +5,7 @@ import bgLight from '../../assets/images/bg-pattern-light.svg';
 export const Container = styled.div`
   max-width: 600px;
   margin: 0 auto;
+  padding-bottom: 30px;
   height: 100%;
 
   display: flex;
