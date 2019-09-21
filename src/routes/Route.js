@@ -3,13 +3,14 @@ import { Route, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import DashboardLayout from '../pages/_layouts/dashboard';
+import defaultLayout from '../pages/_layouts/default';
 
 export default function RouteWrapper({
   component: Component,
   isPrivate,
   ...rest
 }) {
-  const signed = true;
+  const signed = false;
 
   if (!signed && isPrivate) {
     return <Redirect to="/" />;
@@ -19,7 +20,7 @@ export default function RouteWrapper({
     return <Redirect to="/dashboard" />;
   }
 
-  const Layout = DashboardLayout;
+  const Layout = signed ? DashboardLayout : defaultLayout;
 
   return (
     <Route
